@@ -149,9 +149,11 @@
           if(!(valor in perfil))
             perfil[valor] = valoresPadrao[valor];
         };
-
+        
         const perfilDiv = document.createElement('div');
         perfilDiv.classList.add('perfil');
+
+        perfilDiv.id = perfil.github
         
         // Modelo HTML de cada perfil
         perfilDiv.innerHTML = 
