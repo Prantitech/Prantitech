@@ -1,0 +1,31 @@
+header h1 {
+    text-align: center;
+}
+
+header button {
+    font-size: 1.2rem;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 1%;
+}
+
+main .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main table td,
+main table tr,
+main table th {
+    padding: 5px;
+    text-align: center;
+}
+
+main table th {
+    font-size: 1.3rem;
+}
+
+main table td {
+    border: 1px solid black;
+}

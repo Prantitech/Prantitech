@@ -1,25 +1,99 @@
-body{
-  height: 100%;
-  width: 100%;
+#body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #121212;
+  color: white;
 }
-header{
+
+
+header {
+  width: 100%;
+  background-color: #222222;
+  color: white;
+}
+
+header .container {
   display: flex;
   align-items: center;
 }
-.div1{
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-}
-.div1 a{
-  font-size: larger;
-  text-decoration: none;
-}
-nav img{
-  width: 100%;
-  border-radius: 100%;
-}
-nav{
-margin-bottom: 1%;
 
+header .titulo {
+  display: flex;
+  align-items: center;
+  margin: 1%;
+}
+
+header .titulo img {
+  margin: 2%;
+  border-radius: 50%;
+}
+
+header nav {
+  width: 100%
+}
+
+header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav a {
+  font-size: 1.2rem;
+  color: white;
+}
+
+
+header .viewMode  {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  border-radius: 30px;
+  box-shadow: 0 0 0 2px white;
+  margin: 2%;
+}
+
+header .viewMode label{
+  position: relative;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #5f5f5f;
+  box-shadow: inset 8px 0 5px #1a1919,
+  1px 0 10px black;
+  border-radius: 50%;
+  transition-duration: 0.3s;
+}
+
+header .viewMode input {
+  display: none;
+}
+
+header .viewMode label:hover {
+  cursor: pointer;
+}
+
+header .viewMode input:checked ~ label{
+  left: 50%;
+  box-shadow: inset -8px 0 5px #b4b3b3,
+  1px 0 10px white;
+  transition-duration: 0.3s;
+
+}
+
+main .container {
+  padding: 10px;
+}
+
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: #222222;
+}
+
+footer .container {
+  padding: 5px;
 }

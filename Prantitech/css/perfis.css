@@ -1,7 +1,36 @@
-.perfis {
+header .container {
+  position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .container h1 {
+  margin: 2%;
+}
+
+header .container button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.3rem;
+  padding: 3px;
+  margin: 1%;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+header .container button:hover {
+  background-color: #e2e2e2;
+  border: 1px solid black;
+  color: white;
+}
+
+#professor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
-  flex-direction: row;
 }
 
 img {
@@ -9,12 +38,39 @@ img {
   width: 25%;
 }
 
-h1 {
-  font-size: larger;
+main .titulos {
+  text-align: center;
+  margin: 2%;
+}
+
+.perfis {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .perfil {
-  margin-bottom: 10%;
-  margin-right: 2%;
-  width: 30%;
+  width: calc(100% / 4);
+  margin: 1%;
+}
+
+.perfil p {
+  margin: 6px;
+}
+
+.perfil:hover .nome-perfil,
+.perfil:hover .img-perfil {
+  transform: scale(1.1);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.contatos-perfil a {
+  color: blue;
+}
+
+.contatos-perfil a:hover {
+  text-decoration: underline;
 }

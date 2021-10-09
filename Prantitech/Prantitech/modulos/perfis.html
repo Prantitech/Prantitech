@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/perfis.css">
+  </head>
+  <body>
+
+    <header></header>
+
+    <main>
+      <h1 class="titulos">Professores</h1>
+      <div class="perfis" id="professor"></div>
+      
+      <h1 class="titulos">Alunos</h1>
+      <div class="perfis" id="aluno"></div>
+    </main>
+
+    <script>
+      /*
+      Para adicionar um perfil, basta adicionar à array perfis um objeto como este abaixo:
+        {
+          nome: NOME,
+          email: EMAIL,
+          github: GITHUB,
+          cargo: CARGO,
+          img: IMG
+        }
+      Explicação de cada propriedade:
+        nome: (acho que é bem obvio)
+        email: o email de escolha da pessoa, podendo ser o pessoal ou o @escola.
+        github: o nome do perfil do GitHub, não sendo necessáriamente o link.
+        (opcional) cargo: os cargos possíveis são 'aluno' e 'professor'. Se não for fornecido, será escolhido o cargo 'aluno'
+        (opcional) img: o caminho da foto de perfil. Se não for fornecido, será escolhido a foto de perfil do GitHub
+      */
+      const perfis = [
+        {
+          nome: 'Josilaine E.N.',
+          email: 'josilaine.nogueira@escola.pr.gov.br',
+          github: 'JosiNogueira',
+          cargo: 'professor'
+        },
+        {
+          nome: 'Thomas J.V.',
+          email: '########@escola.pr.gov.br',
+          github: 'Thomas-Jefersson-Vaz'
+        },
+        {
+          nome: 'Isaque C.S.',
+          email: 'isaqueclaudino12@gmail.com',
+          github: 'Isaque-Claudino-dos-Santos'
+        },
+        {
+          nome: 'João V.C.B.',
+          email: '########@escola.pr.gov.br',
+          github: 'BCVJ'
+        },
+        {
+          nome: 'Jean N.R.S.',
+          email: 'jean.natharesendeda.silva@escola.pr.gov.br',
+          github: 'JeanResende12'
+        },
+        {
+          nome: 'Gustavo L.G.',
+          email: 'gustavo.gogola@escola.pr.gov.br',
+          github: 'GustavoGogola9102'
+        },
+        {
+          nome: 'Lorrany B.',
+          email: 'lorrany.bortoletto@escola.pr.gov.br',
+          github: 'Lorrany-Bortoletto'
+        },
+        {
+          nome: 'Marlon J.M.',
+          email: 'marlonjmeireles@gmail.com',
+          github: 'Marlon-Meireles'
+        },
+        {
+          nome: 'Gabriella F.A.',
+          email: 'aires.gabriella@escola.pr.gov.br',
+          github: 'GabriellaFerreiraAires'
+        },
+        {
+          nome: 'Eduardo A.',
+          email: 'eduardo.cirino@escola.pr.gov.br',
+          github: '12Eduardo'
+        },
+        {
+          nome: 'Claudiney G.R.S.',
+          email: 'santos.claudiney@escola.pr.gov.br',
+          github: 'Claudiney-Santos'
+        },
+        {
+          nome: 'Braian F.S.',
+          email: 'braian.fagundes.souza@escola.pr.gov.br',
+          github: 'braianvfs7'
+        },
+        {
+          nome: 'Victor H.R.L.',
+          email: 'victor.hugorodrigues.lima@escola.pr.gov.br',
+          github: 'Victor0505'
+        },
+        {
+          nome: 'Murilo P.B.',
+          email: 'murilohue779@gmail.com',
+          github: 'Muriilo779'
+        },
+        {
+          nome: 'João V.P.S.',
+          email: 'jv8381973@gmail.com',
+          github: 'joaoivtor'
+        },
+        {
+          nome: 'Emmanuel O.',
+          email: 'emmanuoliver2@gmail.com',
+          github: 'Emmanuel3y5'
+        },
+        {
+          nome: 'Alexandre G.R.',
+          email: 'alexandre.rodriguez@escola.pr.gov.br',
+          github: 'AlexandreGoncalvesR'
+        },
+        {
+          nome: 'Kaenna F. M.',
+          email: 'kaenna.molina@escola.pr.gov.br',
+          github: 'kaennamolina'
+        }
+      ];
+
+      // Os perfis estão organizados de acordo com o nome em ordem alfabética
+      perfis.sort((a, b) => {
+        if(a.nome > b.nome)
+          return 1;
+        else if(a.nome < b.nome)
+          return -1;
+        return 0;
+      });
+
+      perfis.forEach(perfil => {
+        const gitHubLink = 'https://github.com/' + perfil.github;
+        const valoresPadrao = {
+          img: gitHubLink + '.png', // Se não for fornecido o caminho da imagem, será escolhida a imagem do perfil do GitHub
+          cargo: 'aluno'            // Se não for fornecido o cargo, o perfil será considerado de um aluno
+        };
+        
+        // Verifica se as propriedades de valoresPadrao foram definidas em perfil, se não, o perfil as terá com o valor padrão respectivo
+        for(valor in valoresPadrao) {
+          if(!(valor in perfil))
+            perfil[valor] = valoresPadrao[valor];
+        };
+        
+        const perfilDiv = document.createElement('div');
+        perfilDiv.classList.add('perfil');
+
+        perfilDiv.id = perfil.github
+        
+        // Modelo HTML de cada perfil
+        perfilDiv.innerHTML = 
+        `
+        <a href="${gitHubLink}"><img class="img-perfil" src="${perfil.img}"></a>
+        <h2 class="nome-perfil">${perfil.nome}</h2>
+        <div class="contatos-perfil">
+          <h3>Meus contatos:</h3>
+          <p class="email-perfil">Email: ${perfil.email}</p>
+          <p class="github-perfil">GitHub: <a href="${gitHubLink}">${perfil.github}</a></p>
+        </div>
+        `;
+
+        document.getElementById(perfil.cargo.toLowerCase()).appendChild(perfilDiv);
+      });
+    </script>
+  </body>
+</html>
