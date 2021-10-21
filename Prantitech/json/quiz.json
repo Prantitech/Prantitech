@@ -1,0 +1,52 @@
+[
+    {
+        "enunciado": "O que significada HTML?",
+        "alternativas": [
+            "HypnoToad Multiple Loop",
+            "HardText Markup Language",
+            "HyperTable Max Language",
+            "HyperText Markup Language",
+            "HyperText Master Language"
+        ], "alternativasCorretas": [3]
+    },
+    {
+        "enunciado": "Qual a primeira tag que um documento HTML deve conter?",
+        "alternativas": [
+            "<html>",
+            "<head>",
+            "<!DOCTYPE html>",
+            "<title>",
+            "<body>"
+        ], "alternativasCorretas": [2]
+    },
+    {
+        "enunciado": "Qual a versão mais atual do HTML",
+        "alternativas": [
+            "(X)HTML",
+            "HTML 4.0.1",
+            "HTML +",
+            "HTML 5",
+            "HTML 3.2"
+        ], "alternativasCorretas": [3]
+    },
+    {
+        "enunciado": "As tags HTML são envolvidas por quais caracteres?",
+        "alternativas": [
+            "<!--Tag-->",
+            "{Tag}",
+            "[Tag]",
+            "(Tag)",
+            "<Tag>"
+        ], "alternativasCorretas": [4]
+    },
+    {
+        "enunciado": "O que simboliza uma tag de fechamento?",
+        "alternativas": [
+            "\\ (barra invertida)",
+            "; (ponto e vírgula)",
+            "! (exclamação)",
+            "/ (barra)",
+            "= (igual)"
+        ], "alternativasCorretas": [0]
+    }
+]
