@@ -69,12 +69,12 @@
                 headers.append(name, 'no-cache');
             fetch('../json/quiz.json', { method: 'GET', headers: headers })
             .then(resultado => {
-                console.log(resultado);
                 if(resultado.ok)
                     return resultado.json();
                 else
                     window.alert('Não foi possível se conectar com o servidor, por favor tente recarregar página!\nCaso o erro persista, entre em contato com o desenvolvedor!');
             }).then(json => {
+                console.log(json);
                 if(json !== undefined)
                     quiz = json;
             });
