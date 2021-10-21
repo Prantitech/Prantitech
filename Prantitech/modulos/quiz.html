@@ -63,7 +63,6 @@
                 }
             ];*/
 
-            let quiz;
             const headers = new Headers();
             for(const name of ['pragma', 'cache-control'])
                 headers.append(name, 'no-cache');
@@ -76,11 +75,9 @@
             }).then(json => {
                 console.log(json);
                 if(json !== undefined)
-                    quiz = json;
+                    document.querySelector('main').appendChild(gerarQuiz(json));
             });
-            console.log(quiz);
 
-            document.querySelector('main').appendChild(gerarQuiz(quiz));
         </script>
     </body>
 </html>
