@@ -48,5 +48,25 @@
             "/ (barra)",
             "= (igual)"
         ], "alternativasCorretas": [0]
+    },
+    {
+        "enunciado": "HTML é uma linguagem de...?",
+        "alternativas": [
+            "Criação",
+            "Programação",
+            "Exclusão",
+            "Formatação",
+            "Informação"
+        ], "alternativasCorretas": [1]
+    },
+    {
+        "enunciado": "Quando o programador deseja aplicar uma formatação na tag, esse processo é chamado de estilo...",
+        "alternativas": [
+            "In-line",
+            "Incorporado",
+            "In-tag",
+            "CSS",
+            "OFF-tag"
+        ], "alternativasCorretas": [4]
     }
 ]
