@@ -69,6 +69,7 @@
                 headers.append(name, 'no-cache');
             fetch('../json/quiz.json', { method: 'GET', headers: headers })
             .then(resultado => {
+                console.log(resultado);
                 if(resultado.ok)
                     return resultado.json();
                 else
