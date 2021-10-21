@@ -52,7 +52,7 @@
                     ], alternativasCorretas: [4]
                 },
                 {
-                    enunciado: 'O que simboliza uma tag de fechamento?<a style="text-decoration: none;" href="#" onclick="this.parentNode.parentNode.remove();document.body.style.backgroundColor=\'black\';alert(\'Algo aconteceu!\')">teste</a>',
+                    enunciado: 'O que simboliza uma tag de fechamento?',
                     alternativas: [
                         '\\ (barra invertida)',
                         '; (ponto e vírgula)',
@@ -60,7 +60,28 @@
                         '/ (barra)',
                         '= (igual)'
                     ], alternativasCorretas: [0]
-                }
+                },
+                {
+                    enunciado: 'HTML é uma linguagem de...?',
+                    alternativas: [
+                        'Criação',
+                        'Programação',
+                        'Exclusão',
+                        'Formatação',
+                        'Informação'
+                    ], alternativasCorretas: [1]
+                },
+                {
+                    enunciado: 'Quando o programador deseja aplicar uma formatação na tag, esse processo é chamado de estilo...',
+                    alternativas: [
+                        'In-line',
+                        'Incorporado',
+                        'In-tag',
+                        'CSS',
+                        'OFF-tag'
+                    ], alternativasCorretas: [4]
+                },
+
             ];
 
             document.querySelector('main').appendChild(gerarQuiz(quiz));
