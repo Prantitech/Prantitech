@@ -10,7 +10,7 @@
 
         <script src="../js/gerarQuiz.js"></script>
         <script>
-            const quiz = [
+            /*const quiz = [
                 {
                     enunciado: 'O que significada HTML?',
                     alternativas: [
@@ -60,29 +60,24 @@
                         '/ (barra)',
                         '= (igual)'
                     ], alternativasCorretas: [0]
-                },
-                {
-                    enunciado: 'HTML é uma linguagem de...?',
-                    alternativas: [
-                        'Criação',
-                        'Programação',
-                        'Exclusão',
-                        'Formatação',
-                        'Informação'
-                    ], alternativasCorretas: [1]
-                },
-                {
-                    enunciado: 'Quando o programador deseja aplicar uma formatação na tag, esse processo é chamado de estilo...',
-                    alternativas: [
-                        'In-line',
-                        'Incorporado',
-                        'In-tag',
-                        'CSS',
-                        'OFF-tag'
-                    ], alternativasCorretas: [4]
-                },
+                }
+            ];*/
 
-            ];
+            let quiz;
+            const headers = new Headers();
+            for(const name of ['pragma', 'cache-control'])
+                headers.append(name, 'no-cache');
+            fetch('../json/quiz.json', { method: 'GET', headers: headers })
+            .then(resultado => {
+                if(resultado.ok)
+                    return resultado.json();
+                else
+                    window.alert('Não foi possível se conectar com o servidor, por favor tente recarregar página!\nCaso o erro persista, entre em contato com o desenvolvedor!');
+            }).then(json => {
+                if(json !== undefined)
+                    quiz = json;
+            });
+            console.log(quiz);
 
             document.querySelector('main').appendChild(gerarQuiz(quiz));
         </script>
