@@ -1,0 +1,54 @@
+.questao {
+    width: 50%;
+    --altNeutro: #d3adad;
+    --altDestaque: #f8b6b6;
+    --altPressionado: #b86b6b;
+}
+
+.questao-alternativas {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-width: 13em;
+}
+
+.questao  .questao-alternativa {
+    border: 1px solid black;
+    border-radius: 0;
+    background-color: var(--altNeutro);
+    cursor: pointer;
+}
+
+.questao  .questao-alternativa:hover,.questao .questao-alternativa:active {
+    background-color: var(--altDestaque);
+}
+
+.questao-finalizada .questao-alternativa {
+    cursor: auto;
+}
+
+.questao-finalizada .questao-alternativa:hover, .questao-finalizada .questao-alternativa:active {
+    background-color: var(--altNeutro);
+}
+
+.chutes-restantes {
+    color: rgba(0, 0, 0, 0.8)
+}
+
+.questao .alternativa-correta {
+    color: green;
+    cursor: auto;
+}
+
+.questao .alternativa-correta:hover, .questao .alternativa-correta:active, .questao .alternativa-errada:hover, .questao .alternativa-errada:active {
+    background-color: var(--altNeutro);
+}
+
+.questao .alternativa-errada {
+    color: red;
+    cursor: auto;
+}
+
+.questao-calcular-pontuacao {
+    margin: 1.2em 0;
+}
