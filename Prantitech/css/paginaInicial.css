@@ -1,0 +1,35 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	border: none;
+	list-style: none;
+  color: rgb(222, 222, 223);
+}
+a {
+	text-decoration: none;
+}
+body{
+  font-family: Verdana,sans-serif;
+  background-color: #121212;
+}
+#body {
+  background-color: #121212;
+  color: rgb(222, 222, 223);
+}
+.container {
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.titulo-link {
+  display: block;
+  font-size: 1.5em;
+}
+.youtube {
+  text-align: center;
+  font-family: Verdana,sans-serif;
+}
+
+
+

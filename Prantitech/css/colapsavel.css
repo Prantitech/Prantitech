@@ -1,21 +1,36 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	border: none;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
 .titulo-colapsavel {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
     display: block;
+    color: rgb(222, 222, 223);
     font-size: 1.5rem;
     padding: 5px;
-    width: 100%;
+
     text-align: left;
-    border: 1px solid black;
+    border: 3px solid #121212;
     cursor: pointer;
-    background: #d2dbe6;
+    background: rgb(45, 45, 45);
     transition: background 0.2s;
 }
 
 .titulo-colapsavel:hover {
-    background: #e7eaee;
+    background: rgb(53, 53, 53);
 }
 
 .titulo-colapsavel:active {
-    background: #a5a9ad;
+    background: rgb(54, 54, 54);
 }
 
 .titulo-colapsavel::before {
@@ -46,16 +61,24 @@
 }
 
 .conteudo-colapsavel {
+    line-height: 1.75;
+    text-align: center;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
     transition: max-height 0.2s ease-out;
     max-height: 0;
     overflow: hidden;
-    width: 100%;
     padding: 1px solid black;
 }
-
 .conteudo-colapsavel a {
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    padding: 10px;
     color: white;
     font-size: 1.2rem;
-    margin: 1%;
-    text-decoration: underline;
+}
+.conteudo-colapsavel, .lista :hover{
+    color: red;
 }

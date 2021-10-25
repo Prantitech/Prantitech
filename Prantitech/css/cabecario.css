@@ -1,0 +1,81 @@
+* {
+  list-style: none;
+}
+html, body {
+  font-family: Verdana,sans-serif;
+  height:100%;
+}
+.geral {
+  min-height:100%;
+  position:relative;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: rgb(222, 222, 223);
+  text-decoration: underline;
+}
+header {
+  width: 100%;
+  background-color: #222222;
+	padding: 20px 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+}
+
+.cabecario {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  width: 940px;
+
+}
+header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav {
+ width: 100%;
+
+}
+nav li {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+nav a {
+  margin: 5px;
+  color: rgb(222, 222, 223);
+  font-size: 1rem;
+  text-decoration: none;
+}
+footer {
+  box-sizing: border-box;
+  line-height: 3em;
+  word-spacing: 2px;
+  width: 100%;
+  padding: 48px 24px;
+  background: url("../img/bg.jpg");
+}
+footer a {
+  color: rgb(222, 222, 223);;
+}
+footer a:hover {
+  color: rgb(222, 222, 223);;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.cabecarioBaixo {
+  color: rgb(222, 222, 223);
+}

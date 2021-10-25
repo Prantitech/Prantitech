@@ -3,20 +3,37 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prantitech</title>
+  <link rel="stylesheet" href="../css/cabecario.css">
   <link rel="stylesheet" href="../css/perfis.css">
-  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="icon" href="../img/logo.ico">
+
 </head>
 
 <body>
-
   <header>
-    <div class="container">
-      <h1>Perfio dos Alunos e Professores</h1>
-      <button><a href="../index.html">Volta para o Inicio</a></button>
-    </div>
-  </header>
+    <div class="cabecario">
 
+      <div class="titulo">
+        <img src="../img/logo.png">
+        <h1>Prantitech</h1>
+      </div>
+      <div class="palavrasCabecario">
+      <nav>
+        <ul type="none">
+
+
+        </ul>
+      </nav>
+      <!-- </div>
+
+          <div class="viewMode">
+            <input type="checkbox" id="checkMy">
+            <label for="checkMy"></label>
+          </div>
+
+    </div> -->
+  </header>
   <main>
     <div class="titulos">
       <h2>Professores</h2>
@@ -29,7 +46,7 @@
     </div>
     <div class="perfis" id="aluno"></div>
   </main>
-
+<div class="dados">
   <script>
     /*
       Para adicionar um perfil, basta adicionar à array perfis um objeto como este abaixo:
@@ -183,6 +200,23 @@
       document.getElementById(perfil.cargo.toLowerCase()).appendChild(perfilDiv);
     });
   </script>
+  </div>
+  <footer>
+    <div class="grid">
+      <ul class="listaroda1">
+        <li><a href="./modulos/Sobre.html">Sobre</a></li>
+        <li><a href="./modulos/perfis.html">Perfis de alunos e Professores</a></li>
+      </ul>
+      <ul class="listaroda2">
+        <li><a href="https://discord.gg/hR2PQg2QHm">Discord do site</a></li>
+        <li><a href="https://github.com/Prantitech">GitHub do site</a></li>
+      </ul>
+    </div>
+    <div class="cabecarioBaixo">
+      <p>Dev EdutechMobile</p>
+      <h3>PrAntiTech</h3>
+    </div>
+  </footer>
 </body>
 
 </html>

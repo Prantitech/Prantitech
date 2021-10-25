@@ -1,99 +1,28 @@
-#body {
-  width: 100vw;
-  min-height: 100vh;
-  background-color: #121212;
-  color: white;
+* {
+  color: rgb(222, 222, 223);
+  padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+  font-family: Verdana,sans-serif;
 }
-
-
-header {
-  width: 100%;
-  background-color: #222222;
-  color: white;
+body {
+  background: #121212;
+  line-height: 100px;
+  letter-spacing: .035rem;
+  line-height: 1.75;
+  letter-spacing: -.0027777778rem;
 }
-
-header .container {
-  display: flex;
+.texto {
+  padding: 48px;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
   align-items: center;
 }
-
-header .titulo {
-  display: flex;
-  align-items: center;
-  margin: 1%;
-}
-
-header .titulo img {
-  margin: 2%;
-  border-radius: 50%;
-}
-
-header nav {
-  width: 100%
-}
-
-header nav ul {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-header nav a {
-  font-size: 1.2rem;
-  color: white;
-}
-
-
-header .viewMode  {
-  position: relative;
-  width: 60px;
-  height: 30px;
-  border-radius: 30px;
-  box-shadow: 0 0 0 2px white;
-  margin: 2%;
-}
-
-header .viewMode label{
-  position: relative;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background-color: #5f5f5f;
-  box-shadow: inset 8px 0 5px #1a1919,
-  1px 0 10px black;
-  border-radius: 50%;
-  transition-duration: 0.3s;
-}
-
-header .viewMode input {
-  display: none;
-}
-
-header .viewMode label:hover {
-  cursor: pointer;
-}
-
-header .viewMode input:checked ~ label{
-  left: 50%;
-  box-shadow: inset -8px 0 5px #b4b3b3,
-  1px 0 10px white;
-  transition-duration: 0.3s;
-
-}
-
-main .container {
-  padding: 10px;
-}
-
-
-footer {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  background-color: #222222;
-}
-
-footer .container {
-  padding: 5px;
+.exemplo {
+  margin-right: auto;
+  margin-left: auto;
+  width: 70%;
+  background: rgb(29, 29, 29);
+  color: #fff;
 }
